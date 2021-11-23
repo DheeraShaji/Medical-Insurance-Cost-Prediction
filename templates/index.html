@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">  
+    </head>
+    <body class="b">
+        <section style="color:blue">
+            <div class="MedInsurance"><h1>Estimate your medical insurance cost </h1></div>
+            <img src="../img/bgimg.jpg" class="bg" alt="">
+            <div class="Screen">
+                <form action="{{ url_for('predict')}}" method="post">
+                    <input class="age" name="age" required="required">
+                    <h3 class="h1">Enter your age</h3><br>
+                    <input class="sex" name="sex" placeholder="0 - Male/1 - Female" type="text" required="required">
+                    <h3 class="h2">Sex</h3>
+                    <input class="bmi" name="bmi" required="required">
+                    <h3 class="h3">Body Mass Index</h3><br>
+                    <input class="children" name="children" required="required">
+                    <h3 class="h4">Number of children</h3><br>
+                    <input class="smoker" name ="smoker" placeholder="1 - Yes/0 - No" type="text" required="required">
+                    <h3 class="h5">Are you a smoker?</h3><br>
+                    <input class="region" name="region" placeholder="0-NW/1-NE/2-SE/3-SW" type="text" required="required">
+                    <h3 class="h6">Select your region</h3><br>
+                    <br><br><button class="sub" type="submit ">Calculate</button>
+                    <br>
+                </form>
+                <br><h3 class="out">{{ prediction_text }}<h3>
+            </div>
+        </section>
+    </body>
+</html>
