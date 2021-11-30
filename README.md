@@ -8,3 +8,5 @@ Health insurance or medical insurance is a type of insurance that covers the who
 Health insurance is a type of insurance coverage that pays for medical and surgical expenses incurred by the insured.
 Health Insurance companies have a tough task at determining premiums for their customers. 
 Even though some conditions are more prevalent for certain segments of the population, medical costs are difficult to predict since most money comes from rare conditions of the patients. The objective of this article is to accurately predict insurance costs based on people’s data, including age, Body Mass Index, smoking or not, etc. 
+
+
